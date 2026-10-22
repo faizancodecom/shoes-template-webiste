@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Bodira — Modern Footwear Atelier</title>
+  <meta name="description" content="Card Bodira is an independent footwear atelier creating architectural, minimalist footwear. Handcrafted in Civitanova Marche, Italy.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='none' stroke='%23121214' stroke-width='6'/><text x='50' y='64' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='%23121214'>CB</text></svg>">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SCROLL PROGRESS HAIRLINE (SCRUBS ON SCROLL)
+       ========================================================================= -->
+  <div class="scroll-progress-line" id="scrollProgressBar"></div>
+
+  <!-- =========================================================================
+       ROUNDED FLOATING NAVBAR WITH FLUID SLIDING INDICATOR
+       ========================================================================= -->
+  <header class="nav-floating-wrapper">
+    <nav class="nav-pill" id="navPill" aria-label="Main Navigation">
+      <div class="nav-slider-indicator" id="navSliderIndicator"></div>
+      <a href="#home" class="nav-pill-link active">Home</a>
+      <a href="#shop" class="nav-pill-link">Shop</a>
+      <a href="#lookbook" class="nav-pill-link">Lookbook</a>
+      <a href="#atelier" class="nav-pill-link">Atelier</a>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION (NO BOX! FLOATING SHOE WITH THUMBNAIL DOCK)
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <!-- Left Column: Editorial Introduction -->
+      <div class="hero-content">
+        <span class="hero-eyebrow">Footwear Atelier</span>
+        <h1 class="hero-brand-title" id="heroBrandTitle">Card Bodira</h1>
+        <p class="hero-lead-text" id="heroLeadText">
+          Independent footwear studio dedicated to architectural minimalism, restrained silhouettes, and master Italian leathercraft.
+        </p>
+        <a href="#shop" class="hero-cta-btn">
+          <span>Explore Silhouettes</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right Column: Pure Floating Shoe with Thumbnail Switcher -->
+      <div class="hero-shoe-stage">
+        <div class="hero-shoe-wrapper" id="heroShoeWrapper">
+          <img 
+            src="assets/shoes/shoe1.png" 
+            alt="Card Bodira Monolith Silhouette" 
+            class="hero-shoe-photo"
+            id="heroShoePhoto"
+          >
+          <div class="hero-contact-shadow"></div>
+        </div>
+
+        <!-- Thumbnail Switcher Dock to Change Hero Shoe (Clean Name Only, Positioned Higher) -->
+        <div class="hero-thumbnail-dock" id="heroThumbnails">
+          <button class="hero-thumb-btn active" data-id="cb-01" aria-label="Select Bodira Monolith">
+            <div class="thumb-img-box">
+              <img src="assets/shoes/shoe1.png" alt="" class="thumb-mini-img">
+            </div>
+            <span class="thumb-title">Monolith</span>
+          </button>
+          <button class="hero-thumb-btn" data-id="cb-02" aria-label="Select Bodira Aether">
+            <div class="thumb-img-box">
+              <img src="assets/shoes/shoe6.png" alt="" class="thumb-mini-img">
+            </div>
+            <span class="thumb-title">Aether</span>
+          </button>
+          <button class="hero-thumb-btn" data-id="cb-03" aria-label="Select Bodira Strata">
+            <div class="thumb-img-box">
+              <img src="assets/shoes/shoe3.png" alt="" class="thumb-mini-img">
+            </div>
+            <span class="thumb-title">Strata</span>
+          </button>
+          <button class="hero-thumb-btn" data-id="cb-04" aria-label="Select Bodira Kanso">
+            <div class="thumb-img-box">
+              <img src="assets/shoes/shoe2.png" alt="" class="thumb-mini-img">
+            </div>
+            <span class="thumb-title">Kanso</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SCROLL-DRIVEN KINETIC TEXT MARQUEE (NO SLASHES!)
+       ========================================================================= -->
+  <div class="kinetic-scroll-strip" aria-hidden="true">
+    <div class="kinetic-track" id="kineticTrack">
+      <span class="kinetic-phrase">Card Bodira</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Atelier di Calzature</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Civitanova Marche</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Architectural Form</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Edition 2026</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Card Bodira</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Atelier di Calzature</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Civitanova Marche</span>
+      <span class="kinetic-sep">✦</span>
+      <span class="kinetic-phrase">Architectural Form</span>
+      <span class="kinetic-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SHOP / COLLECTION SECTION (NO HOVER IMAGE EFFECT, 8 SILHOUETTES)
+       ========================================================================= -->
+  <section class="shop-section" id="shop">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-subtitle">Portfolio Catalog</span>
+        <h2 class="section-title">The Current Collection</h2>
+        <p class="section-desc">
+          Handcrafted in limited seasonal editions using vegetable-tanned Tuscan calfskin, organic canvas, and sculpted bio-circular soles.
+        </p>
+      </div>
+
+      <!-- Filter Categories with Fluid Sliding Indicator -->
+      <div class="collection-filter-bar" id="filterBar">
+        <div class="filter-slider-indicator" id="filterSliderIndicator"></div>
+        <button class="filter-btn active" data-category="all">All Silhouettes</button>
+        <button class="filter-btn" data-category="runners">Runners</button>
+        <button class="filter-btn" data-category="lows">Low Tops</button>
+        <button class="filter-btn" data-category="highs">High Tops</button>
+        <button class="filter-btn" data-category="hybrids">Hybrids</button>
+      </div>
+
+      <!-- Clean Editorial Products Grid (Click to Expand Full-Page) -->
+      <div class="shoes-grid" id="shoesGrid">
+        <!-- Rendered dynamically by app.js with single consistent photo -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LOOKBOOK (SCROLL-DRIVEN PARALLAX REEL)
+       ========================================================================= -->
+  <section class="lookbook-section" id="lookbook">
+    <div class="container">
+      <div class="lookbook-grid">
+        <!-- Text Column -->
+        <div class="lookbook-text-wrap">
+          <span class="section-subtitle">Editorial Lookbook</span>
+          <blockquote class="lookbook-quote">
+            "Form is not the aim of our work, but only the natural consequence of honest materials."
+          </blockquote>
+          <p class="lookbook-caption">
+            Photographed in minimalist spaces across Milan and Tokyo. Card Bodira explores the balance between sculptural volumes and lightweight daily wear.
+          </p>
+        </div>
+
+        <!-- Editorial Photos Gallery with Parallax Scrub -->
+        <div class="lookbook-gallery">
+          <div class="lookbook-photo-frame tall">
+            <img 
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" 
+              alt="Editorial Monochrome Styling" 
+              class="lookbook-photo"
+              loading="lazy"
+            >
+          </div>
+          <div class="lookbook-photo-frame square">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+              alt="Minimal Travertine Architectural Setting" 
+              class="lookbook-photo"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ATELIER HERITAGE (EDITORIAL STORYTELLING)
+       ========================================================================= -->
+  <section class="atelier-section" id="atelier">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-subtitle">Heritage and Craft</span>
+        <h2 class="section-title">Civitanova Marche Workshop</h2>
+        <p class="section-desc">
+          Every pair is shaped in the Le Marche shoemaking district of Italy, combining three generations of welt craftsmanship with modern biomechanical lasts.
+        </p>
+      </div>
+
+      <div class="atelier-narrative-split">
+        <div class="atelier-image-pane">
+          <img 
+            src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1200&q=80" 
+            alt="Italian Leather Workshop Atelier" 
+            style="width: 100%; height: 100%; object-fit: cover;"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="atelier-story-pane">
+          <div>
+            <h3 class="story-chapter-title">Tuscan Vacchetta</h3>
+            <p class="story-chapter-body">
+              Full-grain calfskin tanned naturally with tree barks and plant extracts in Tuscany. It develops an intimate patina with time, molding uniquely to the owner’s foot.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="story-chapter-title">Bio-Circular Cushioning</h3>
+            <p class="story-chapter-body">
+              Outsoles cast from circular bio-polymers and natural latex. Each sole delivers cloud-soft impact absorption while ensuring full resoleability for decades of wear.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE FOOTER (FULLY FUNCTIONAL BUTTONS, ZERO SLASHES)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <h3>Card Bodira</h3>
+          <p>
+            An independent footwear atelier dedicated to modern minimalism and architectural balance. Handcrafted in Civitanova Marche, Italy.
+          </p>
+        </div>
+
+        <!-- Atelier Locations (Interactive Drawer Triggers) -->
+        <div class="footer-nav-col">
+          <h4>Atelier Studios</h4>
+          <ul class="footer-links-list">
+            <li><button class="footer-interactive-link" data-drawer="civitanova">Civitanova Marche</button></li>
+            <li><button class="footer-interactive-link" data-drawer="paris">Paris Atelier</button></li>
+            <li><button class="footer-interactive-link" data-drawer="tokyo">Tokyo Studio</button></li>
+            <li><button class="footer-interactive-link" data-drawer="newyork">New York Suite</button></li>
+          </ul>
+        </div>
+
+        <!-- Craft Protocols & Services (Interactive Drawer Triggers) -->
+        <div class="footer-nav-col">
+          <h4>Protocols</h4>
+          <ul class="footer-links-list">
+            <li><button class="footer-interactive-link" data-drawer="bespoke">Bespoke Fitting</button></li>
+            <li><button class="footer-interactive-link" data-drawer="care">Care and Resole</button></li>
+            <li><button class="footer-interactive-link" data-drawer="provenance">Materials Provenance</button></li>
+            <li><button class="footer-interactive-link" data-drawer="inquiry">Private Inquiry</button></li>
+          </ul>
+        </div>
+
+        <!-- Site Navigation -->
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-interactive-link">Home</a></li>
+            <li><a href="#shop" class="footer-interactive-link">Shop</a></li>
+            <li><a href="#lookbook" class="footer-interactive-link">Lookbook</a></li>
+            <li><a href="#atelier" class="footer-interactive-link">Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Card Bodira. All rights reserved.</div>
+        <div>Civitanova Marche · Paris · Tokyo · New York</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FULL-PAGE EXPANDING PRODUCT EXPERIENCE (IMMERSIVE MORPH)
+       ========================================================================= -->
+  <div class="product-fullpage-overlay" id="fullpageOverlay" role="dialog" aria-modal="true">
+    <div class="fullpage-container" id="fullpageContainer">
+      <button class="fullpage-close-btn" id="fullpageCloseBtn" aria-label="Close product view">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+        <span>Close</span>
+      </button>
+
+      <div class="fullpage-grid">
+        <!-- Visual Gallery Left -->
+        <div class="fullpage-visual-side">
+          <div class="fullpage-shoe-stage">
+            <img src="" alt="" class="fullpage-hero-image" id="fullpageHeroImg">
+            <div class="fullpage-shoe-shadow"></div>
+          </div>
+        </div>
+
+        <!-- Specifications & Silhouettes Right -->
+        <div class="fullpage-info-side">
+          <div class="fullpage-breadcrumb" id="fullpageCategory">Architectural Runner</div>
+          <h2 class="fullpage-title" id="fullpageTitle">Bodira Monolith</h2>
+
+          <div class="fullpage-specs-block">
+            <div class="spec-row">
+              <span class="spec-label">Upper Leather</span>
+              <span class="spec-val" id="fullpageMaterials">Full-Grain Tuscan Calfskin</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Outsole Chassis</span>
+              <span class="spec-val" id="fullpageSole">Segmented Bio-Circular EVA Outsole</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Construction</span>
+              <span class="spec-val" id="fullpageConstruction">Hand-Beveled Blake Welt</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Origin</span>
+              <span class="spec-val">Civitanova Marche, Italy</span>
+            </div>
+          </div>
+
+          <div class="fullpage-sizes-block">
+            <span class="sizes-title">Available Sizing</span>
+            <div class="sizes-row">
+              <button class="size-chip active">EU 39</button>
+              <button class="size-chip">EU 40</button>
+              <button class="size-chip">EU 41</button>
+              <button class="size-chip">EU 42</button>
+              <button class="size-chip">EU 43</button>
+              <button class="size-chip">EU 44</button>
+              <button class="size-chip">EU 45</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       ATELIER INFORMATION DRAWER (FOR FOOTER PROTOCOLS & STUDIOS)
+       ========================================================================= -->
+  <div class="info-drawer-backdrop" id="infoDrawerBackdrop" role="dialog" aria-modal="true">
+    <div class="info-drawer-panel">
+      <button class="drawer-close-btn" id="infoDrawerCloseBtn" aria-label="Close drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <h3 class="drawer-title" id="infoDrawerTitle">Studio Location</h3>
+      <div class="drawer-body" id="infoDrawerBody"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="js/app.js"></script>
+</body>
+</html>
